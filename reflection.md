@@ -23,3 +23,5 @@ Examples:
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
 `--- Reflection Below This Line ---`
+
+I actually enjoyed this assignment a lot. I did have an issue at first with importing the ETL from the other file when doing the testing for the ETL file. Otherwise, I enjoyed the assignment and it was not incredibly difficult to complete. I do enjoy the map aspect of it. Doing all of the filtering for the dashboard portion was a challenge, but I was able to overcome it by referencing previous work that we did last week and the week before with streamlit. I am now more confident and comfortable with filtering the lists, and being able to also put them into visualizations.
