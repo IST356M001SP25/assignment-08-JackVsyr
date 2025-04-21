@@ -7,7 +7,7 @@ def test_should_pass():
 
 def test_top_locations():
     # Arrange the test variables
-    violations_df = pd.read_csv('./cache/final_cuse_parking_violations.csv')
+    violations_df = pd.read_csv('/Users/jack/Downloads/IST 356/assignment-08-JackVsyr/cache/final_cuse_parking_violations.csv')
     expect_row_count = 135
     expect_col_count = 2
     expect_col_names = ['amount', 'location']
@@ -27,7 +27,7 @@ def test_top_locations():
 
 def test_top_locations_mappable():
     # Arrange the test variables
-    violations_df = pd.read_csv('./cache/final_cuse_parking_violations.csv')
+    violations_df = pd.read_csv('/Users/jack/Downloads/IST 356/assignment-08-JackVsyr/cache/final_cuse_parking_violations.csv')
     expect_row_count = 135
     expect_col_count = 4
     expect_col_names = ['amount', 'lat', 'location','lon'] # order does not matter
@@ -47,7 +47,7 @@ def test_top_locations_mappable():
 
 def test_tickets_in_top_locations():
         # Arrange the test variables
-    violations_df = pd.read_csv('./cache/final_cuse_parking_violations.csv')
+    violations_df = pd.read_csv('/Users/jack/Downloads/IST 356/assignment-08-JackVsyr/cache/final_cuse_parking_violations.csv')
     expect_row_count = 8109
     expect_col_count = 11
     expect_col_names = ['location','ticket_number','issued_date',
@@ -66,3 +66,5 @@ def test_tickets_in_top_locations():
 
     print("\nTesting column names are  {expect_col_names}...")
     assert set(top_locations_df.columns) == set(expect_col_names)
+
+    
