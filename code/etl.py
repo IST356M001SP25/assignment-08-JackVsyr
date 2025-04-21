@@ -25,19 +25,19 @@ if __name__ == '__main__':
     Main ETL job. 
     '''
     print("Running job...")
-    print("Reading violations from ./cache/final_cuse_parking_violations.csv")
+    print("Reading violations from cache/final_cuse_parking_violations.csv")
 
-    violations_df = pd.read_csv('./cache/final_cuse_parking_violations.csv')
+    violations_df = pd.read_csv('/Users/jack/Downloads/IST 356/assignment-08-JackVsyr/cache/final_cuse_parking_violations.csv')
     TL_df = top_locations(violations_df)
-    print("Writing top locations to ./cache/top_locations.csv")
-    TL_df.to_csv('./cache/top_locations.csv', index=False)
+    print("Writing top locations to cache/top_locations.csv")
+    TL_df.to_csv('/Users/jack/Downloads/IST 356/assignment-08-JackVsyr/cache/top_locations.csv', index=False)
     
     TL_map_df = top_locations_mappable(violations_df)
 
-    print("Writing mappable top locations to ./cache/top_locations_mappable.csv")
-    TL_map_df.to_csv('./cache/top_locations_mappable.csv', index=False)
+    print("Writing mappable top locations to cache/top_locations_mappable.csv")
+    TL_map_df.to_csv('/Users/jack/Downloads/IST 356/assignment-08-JackVsyr/cache/top_locations_mappable.csv', index=False)
 
     tickets_in_TL_df = tickets_in_top_locations(violations_df, TL_df)
 
-    print("Writing tickets in top locations to ./cache/tickets_in_top_locations.csv")
-    tickets_in_TL_df.to_csv('./cache/tickets_in_top_locations.csv', index=False)
+    print("Writing tickets in top locations to cache/tickets_in_top_locations.csv")
+    tickets_in_TL_df.to_csv('/Users/jack/Downloads/IST 356/assignment-08-JackVsyr/cache/tickets_in_top_locations.csv', index=False)
